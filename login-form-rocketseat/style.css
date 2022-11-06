@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+#app{
+    display: flex;
+    background-color: var(--background);
+}
+
+#left-side{
+    width: 50vw;
+    height: 100vh;
+}
+
+#logo{
+    margin: 40px 0 70px 40px;
+    max-width: 115px;
+    max-height: 28px;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 8% 20%;
+    gap: 27px;
+    margin: 0 auto;
+    max-width: 40vw;
+    height: 70vh;
+    border-radius: 4px;
+    background-color: var(--form-background);
+}
+
+#login h2{
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-title);
+}
+
+
+#title-text{
+    display: flex;
+    gap: 10px;
+}
+
+span p{
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-base);
+}
+
+#right-side{
+    width: 50%;
+    height: 100vh;
+    background-image: url(images/side-image-2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-base);
+}
+
+#form > form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#login-options{
+    display: flex;
+    gap: 20px;
+}
+
+.input{
+    border: 2px solid var(--text-base);
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--form-background);
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 15px 15px 15px 35px;
+}
+
+#mail-icon{
+    position: absolute;
+    margin: 10px 15px 15px 10px;
+}
+
+#lock-icon{
+    position: absolute;
+    margin: 10px 15px 15px 10px;    
+}
+
+input:focus-within{
+    border-width: 3px;
+    border-color: #ffc632;
+    border-style: solid;
+   outline: none;
+}
+
+#enter{
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: var(--form-background);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    background-color: #ffc632;
+}
+
+.yellow-text{
+    text-align: center;
+    font-size: 14px;
+    color: var(--primary-color);
+    text-decoration: none;
+}

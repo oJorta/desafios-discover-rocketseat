@@ -30,12 +30,13 @@
 #login{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     box-sizing: border-box;
     padding: 8% 20%;
     gap: 27px;
     margin: 0 auto;
-    max-width: 40vw;
-    height: 70vh;
+    width: 40vw;
+    height: 65vh;
     border-radius: 4px;
     background-color: var(--form-background);
 }
@@ -78,9 +79,34 @@ span p{
     gap: 15px;
 }
 
+form input{
+    color: var(--text-base);
+}
+
 #login-options{
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+}
+
+#remember-me{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 8px;
+}
+
+#remember{
+    all: unset;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--text-base);
+    border-radius: 4px;
+    display: inline-block;
+}
+
+#remember:checked{
+    background-color: var(--primary-color);
+    background-image: url(images/check.svg);
 }
 
 .input{
@@ -108,7 +134,7 @@ input:focus-within{
     border-width: 3px;
     border-color: #ffc632;
     border-style: solid;
-   outline: none;
+    outline: none;
 }
 
 #enter{
@@ -124,15 +150,49 @@ input:focus-within{
     cursor: pointer;
 }
 
-.checkbox{
-    width: 20px;
-    height: 20px;
-    background-color: #ffc632;
-}
-
 .yellow-text{
     text-align: center;
     font-size: 14px;
     color: var(--primary-color);
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1070px) {
+    #login{
+        padding: 10%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #right-side{
+        display: none;
+    }
+    
+    #left-side{
+        width: 100vw;
+    }
+
+    #login{
+        width: 65vw;
+        height: 75vh;
+        padding: 5% 12%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #login{
+        background: none;
+    }
+
+    #login{
+        width: 100vw;
+        height: 60vh;
+        padding: 0% 10%;
+    }
+
+    #logo{
+        margin: 40px 0 10px 40px;
+    }
+
+    
+    
 }
